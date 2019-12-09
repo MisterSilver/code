@@ -2,7 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`Ton bot est allumé, sous le nom de ${client.user.tag} !`);
+  client.user.setActivity("Héberger par French-Heberg") 
 });
 
 client.on('message', msg => {
@@ -11,4 +12,4 @@ client.on('message', msg => {
   }
 });
 
-client.login(config.BOT_TOKEN);
+client.login("TON TOKEN");
